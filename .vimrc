@@ -3,7 +3,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-""""""""""""""""" Vundle Stuff
+"************** Vundle Stuff *********
 "
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -18,11 +18,17 @@ Plugin 'VundleVim/Vundle.vim'
 "nerdtree"
 Plugin 'scrooloose/nerdTree'
 
-" All of your Plugins must be added before the following line
+"syntastic stynax checking
+Plugin 'scrooloose/syntastic'
+
+"youcompleteme code completion"
+Plugin 'valloric/youcompleteme'
+
+"------- END Plugins --------"
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-""""""""""""""""" END Vundle stuff
+"************** END Vundle **********
 
 " line numbers toggle
 set number
@@ -39,6 +45,9 @@ set expandtab
 
 " enable mouse
 set mouse=a
+
+" to enable mouse searches
+:set mousemodel=extend
 
 " enable syntax highlight
 syntax on
